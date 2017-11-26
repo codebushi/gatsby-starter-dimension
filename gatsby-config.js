@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter",
+    title: "Gatsby Starter - Dimension by HTML5 UP",
     author: "Hunter Chang",
+    description: "A Gatsby.js Starter based on Dimension by HTML5 UP"
   },
   pathPrefix: '/',
   plugins: [
@@ -16,7 +17,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/assets/img`,
+        path: `${__dirname}/src/images`,
       },
     },
     {

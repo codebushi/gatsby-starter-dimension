@@ -1,47 +1,66 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import '../scss/main.scss'
+import '../assets/scss/main.scss'
+import Helmet from 'react-helmet'
+
+import Header from '../components/Header'
+import Main from '../components/Main'
+import Footer from '../components/Footer'
 
 class Template extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      isArticleVisible: false,
+      article: ''
+    }
+    this.handleToggleArticle = this.handleToggleArticle.bind(this)
+  }
+
+  handleToggleArticle(article) {
+    this.setState({
+      isArticleVisible: !this.state.isArticleVisible,
+      article
+    })
+  }
+
   render() {
-    const { location, children } = this.props
-    let header
+    const siteTitle = this.props.data.site.siteMetadata.title
+    const siteDescription = this.props.data.site.siteMetadata.siteDescription
 
-    let rootPath = `/`
-    if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
-      rootPath = __PATH_PREFIX__ + `/`
-    }
-
-    if (location.pathname === rootPath) {
-      header = (
-        <h1>
-          <Link to={'/'}>
-            Gatsby Starter Blog
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3>
-          <Link to={'/'}>
-            Gatsby Starter Blog
-          </Link>
-        </h3>
-      )
-    }
     return (
-      <div>
-        {header}
-        {children()}
+      <div className={`body ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
+        <Helmet>
+            <title>{siteTitle}</title>
+            <meta name="description" content={siteDescription} />
+        </Helmet>
+
+        <div id="wrapper">
+
+          <Header onToggleArticle={this.handleToggleArticle} />
+          <Main isArticleVisible={this.state.isArticleVisible} article={this.state.article} onToggleArticle={this.handleToggleArticle} />
+          <Footer />
+
+        </div>
+        <div id="bg"></div>
       </div>
     )
   }
 }
 
 Template.propTypes = {
-  children: React.PropTypes.func,
-  location: React.PropTypes.object,
   route: React.PropTypes.object,
 }
 
 export default Template
+
+export const pageQuery = graphql`
+  query PageQuery {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+  }
+`
