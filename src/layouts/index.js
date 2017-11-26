@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import '../assets/scss/main.scss'
 import Helmet from 'react-helmet'
 
@@ -77,7 +76,7 @@ class Template extends React.Component {
 
   render() {
     const siteTitle = this.props.data.site.siteMetadata.title
-    const siteDescription = this.props.data.site.siteMetadata.siteDescription
+    const siteDescription = this.props.data.site.siteMetadata.description
 
     return (
       <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
