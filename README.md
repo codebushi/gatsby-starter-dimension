@@ -5,8 +5,9 @@ Gatsby starter based on the Dimension site template, designed by [HTML5 UP](http
 
 http://gatsby-dimension.surge.sh/
 
+## Installation
+
 Install this starter (assuming Gatsby is installed) by running from your CLI:
 `gatsby new gatsby-starter-dimension https://github.com/ChangoMan/gatsby-starter-dimension`
 
-## Running in development
-`gatsby develop`
+Run `gatsby develop` in the terminal to start.
