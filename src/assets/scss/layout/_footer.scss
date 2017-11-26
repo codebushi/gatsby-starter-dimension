@@ -31,7 +31,7 @@
 			opacity: 0;
 		}
 
-		body.is-loading & {
+		.body.is-loading & {
 			opacity: 0;
 		}
 	}

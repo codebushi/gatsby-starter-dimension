@@ -6,15 +6,6 @@
 
 /* Main */
 
-	#main.main-active {
-		display: flex;
-
-		/* article {
-			display: none;
-			&.active {}
-		} */
-	}
-
 	#main {
 		@include vendor('flex-grow', '1');
 		@include vendor('flex-shrink', '1');
@@ -41,10 +32,17 @@
 			border-radius: _size(border-radius);
 			opacity: 0;
 
-			&.active {
+			&.timeout {
+				display: none;
+			}
+
+			&.active.timeout {
 				@include vendor('transform', 'translateY(0)');
 				opacity: 1;
-				display: block;
+			}
+
+			&.active {
+				display: block !important;
 			}
 
 			.close {

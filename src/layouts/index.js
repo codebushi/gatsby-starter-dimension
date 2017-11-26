@@ -12,13 +12,28 @@ class Template extends React.Component {
     super(props)
     this.state = {
       isArticleVisible: false,
-      timeoutTrigger: false,
-      article: ''
+      timeout: false,
+      articleTimeout: false,
+      article: '',
+      loading: 'is-loading'
     }
-    this.handleToggleArticle = this.handleToggleArticle.bind(this)
+    this.handleOpenArticle = this.handleOpenArticle.bind(this)
+    this.handleCloseArticle = this.handleCloseArticle.bind(this)
   }
 
-  handleToggleArticle(article) {
+  componentDidMount () {
+    this.timeoutId = setTimeout(() => {
+        this.setState({loading: ''});
+    }, 100);
+  }
+
+  componentWillUnmount () {
+    if (this.timeoutId) {
+        clearTimeout(this.timeoutId);
+    }
+  }
+
+  handleOpenArticle(article) {
 
     this.setState({
       isArticleVisible: !this.state.isArticleVisible,
@@ -27,9 +42,36 @@ class Template extends React.Component {
 
     setTimeout(() => {
       this.setState({
-        timeoutTrigger: !this.state.timeoutTrigger,
+        timeout: !this.state.timeout
       })
     }, 325)
+
+    setTimeout(() => {
+      this.setState({
+        articleTimeout: !this.state.articleTimeout
+      })
+    }, 350)
+
+  }
+
+  handleCloseArticle() {
+
+    this.setState({
+      articleTimeout: !this.state.articleTimeout
+    })
+
+    setTimeout(() => {
+      this.setState({
+        timeout: !this.state.timeout
+      })
+    }, 325)
+
+    setTimeout(() => {
+      this.setState({
+        isArticleVisible: !this.state.isArticleVisible,
+        article: ''
+      })
+    }, 350)
 
   }
 
@@ -38,7 +80,7 @@ class Template extends React.Component {
     const siteDescription = this.props.data.site.siteMetadata.siteDescription
 
     return (
-      <div className={`body ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
+      <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
         <Helmet>
             <title>{siteTitle}</title>
             <meta name="description" content={siteDescription} />
@@ -46,9 +88,15 @@ class Template extends React.Component {
 
         <div id="wrapper">
 
-          <Header onToggleArticle={this.handleToggleArticle} timeoutTrigger={this.state.timeoutTrigger} />
-          <Main isArticleVisible={this.state.isArticleVisible} timeoutTrigger={this.state.timeoutTrigger} article={this.state.article} onToggleArticle={this.handleToggleArticle} />
-          <Footer />
+          <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
+          <Main
+            isArticleVisible={this.state.isArticleVisible}
+            timeout={this.state.timeout}
+            articleTimeout={this.state.articleTimeout}
+            article={this.state.article}
+            onCloseArticle={this.handleCloseArticle}
+          />
+          <Footer timeout={this.state.timeout} />
 
         </div>
         <div id="bg"></div>
