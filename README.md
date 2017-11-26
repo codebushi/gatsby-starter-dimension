@@ -1,8 +1,12 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
+# gatsby-starter-dimension
+Gatsby starter based on the Dimension site template, designed by [HTML5 UP](https://html5up.net/dimension).
+
+## Preview
+
+http://gatsby-dimension.surge.sh/
 
 Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+`gatsby new gatsby-starter-dimension https://github.com/ChangoMan/gatsby-starter-dimension`
 
 ## Running in development
 `gatsby develop`
