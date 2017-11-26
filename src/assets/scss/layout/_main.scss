@@ -6,6 +6,15 @@
 
 /* Main */
 
+	#main.main-active {
+		display: flex;
+
+		/* article {
+			display: none;
+			&.active {}
+		} */
+	}
+
 	#main {
 		@include vendor('flex-grow', '1');
 		@include vendor('flex-shrink', '1');
@@ -16,6 +25,7 @@
 		position: relative;
 		max-width: 100%;
 		z-index: 3;
+		display: none;
 
 		article {
 			@include vendor('transform', 'translateY(0.25rem)');
@@ -30,7 +40,6 @@
 			background-color: transparentize(_palette(bg), 0.15);
 			border-radius: _size(border-radius);
 			opacity: 0;
-			display: none;
 
 			&.active {
 				@include vendor('transform', 'translateY(0)');

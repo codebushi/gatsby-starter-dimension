@@ -8,20 +8,10 @@ import pic03 from '../images/pic03.jpg'
 class Main extends React.Component {
   render() {
 
-    let mainStyles = {
-      display: 'none'
-    }
-
     let close = <div className="close" onClick={() => {this.props.onToggleArticle('')}}></div>
 
-    if (this.props.isArticleVisible) {
-      mainStyles = {
-        display: 'flex'
-      }
-    }
-
     return (
-      <div id="main" style={mainStyles}>
+      <div id="main" className={this.props.timeoutTrigger ? 'main-active' : ''}>
 
         <article id="intro" className={this.props.article === 'intro' ? 'active' : ''}>
           <h2 className="major">Intro</h2>

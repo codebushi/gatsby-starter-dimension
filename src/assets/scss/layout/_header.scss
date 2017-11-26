@@ -154,7 +154,6 @@
 		}
 
 		.body.is-article-visible & {
-			display: none;
 			@include vendor('transform', 'scale(0.95)');
 			@include vendor('filter', 'blur(0.1rem)');
 			opacity: 0;

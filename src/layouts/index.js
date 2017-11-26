@@ -12,16 +12,25 @@ class Template extends React.Component {
     super(props)
     this.state = {
       isArticleVisible: false,
+      timeoutTrigger: false,
       article: ''
     }
     this.handleToggleArticle = this.handleToggleArticle.bind(this)
   }
 
   handleToggleArticle(article) {
+
     this.setState({
       isArticleVisible: !this.state.isArticleVisible,
       article
     })
+
+    setTimeout(() => {
+      this.setState({
+        timeoutTrigger: !this.state.timeoutTrigger,
+      })
+    }, 325)
+
   }
 
   render() {
@@ -37,8 +46,8 @@ class Template extends React.Component {
 
         <div id="wrapper">
 
-          <Header onToggleArticle={this.handleToggleArticle} />
-          <Main isArticleVisible={this.state.isArticleVisible} article={this.state.article} onToggleArticle={this.handleToggleArticle} />
+          <Header onToggleArticle={this.handleToggleArticle} timeoutTrigger={this.state.timeoutTrigger} />
+          <Main isArticleVisible={this.state.isArticleVisible} timeoutTrigger={this.state.timeoutTrigger} article={this.state.article} onToggleArticle={this.handleToggleArticle} />
           <Footer />
 
         </div>
