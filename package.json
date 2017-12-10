@@ -4,25 +4,21 @@
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
-    "gatsby": "^1.9.73",
-    "gatsby-image": "^1.0.16",
-    "gatsby-link": "^1.6.22",
-    "gatsby-plugin-google-analytics": "^1.0.10",
+    "gatsby": "^1.9.118",
+    "gatsby-image": "^1.0.27",
+    "gatsby-link": "^1.6.28",
+    "gatsby-plugin-google-analytics": "^1.0.12",
     "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-sass": "^1.0.12",
-    "gatsby-plugin-sharp": "^1.6.9",
+    "gatsby-plugin-sass": "^1.0.14",
+    "gatsby-plugin-sharp": "^1.6.21",
     "gatsby-remark-copy-linked-files": "^1.5.9",
-    "gatsby-remark-images": "^1.5.18",
-    "gatsby-source-filesystem": "^1.5.5",
-    "gatsby-transformer-remark": "^1.7.17",
-    "gatsby-transformer-sharp": "^1.6.10",
-    "lodash": "^4.15.0"
+    "gatsby-remark-images": "^1.5.33",
+    "gatsby-source-filesystem": "^1.5.8",
+    "gatsby-transformer-remark": "^1.7.21",
+    "gatsby-transformer-sharp": "^1.6.14",
+    "lodash": "^4.17.4"
   },
-  "devDependencies": {
-    "gh-pages": "^0.12.0",
-    "prettier": "^1.7.4"
-  },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/ChangoMan/gatsby-starter-dimension",
   "keywords": [
     "gatsby"
   ],
@@ -30,13 +26,12 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "https://github.com/ChangoMan/gatsby-starter-dimension.git"
   },
   "scripts": {
     "dev": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "develop": "gatsby develop",
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
