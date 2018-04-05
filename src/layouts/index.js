@@ -77,16 +77,18 @@ class Template extends React.Component {
   render() {
     const siteTitle = this.props.data.site.siteMetadata.title
     const siteDescription = this.props.data.site.siteMetadata.description
+    const { location, children } = this.props
 
-    return (
-      <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
-        <Helmet>
-            <title>{siteTitle}</title>
-            <meta name="description" content={siteDescription} />
-        </Helmet>
+    let rootPath = `/`
+    if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
+      rootPath = __PATH_PREFIX__ + `/`
+    }
 
+    let content;
+
+    if (location.pathname === rootPath) {
+      content = (
         <div id="wrapper">
-
           <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
           <Main
             isArticleVisible={this.state.isArticleVisible}
@@ -96,16 +98,33 @@ class Template extends React.Component {
             onCloseArticle={this.handleCloseArticle}
           />
           <Footer timeout={this.state.timeout} />
-
         </div>
+      )
+    } else {
+      content = (
+        <div id="wrapper" className="page">
+          <div style={{
+            maxWidth: '1140px'
+          }}>
+            {children()}
+          </div>
+        </div>
+      )
+    }
+
+    return (
+      <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
+        <Helmet>
+            <title>{siteTitle}</title>
+            <meta name="description" content={siteDescription} />
+        </Helmet>
+
+        {content}
+
         <div id="bg"></div>
       </div>
     )
   }
-}
-
-Template.propTypes = {
-  route: React.PropTypes.object,
 }
 
 export default Template

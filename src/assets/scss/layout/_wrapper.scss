@@ -33,4 +33,8 @@
 		@include breakpoint(xsmall) {
 			padding: 1rem;
 		}
+
+		&.page {
+			@include vendor('justify-content', 'flex-start');
+		}
 	}
