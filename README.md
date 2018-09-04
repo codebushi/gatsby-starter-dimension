@@ -2,7 +2,7 @@
 
 **This is a starter for Gatsby.js V1.**
 
-**A newer version of this starter, for Gatsby.js V2 can be found at:**
+**A newer version of this starter for Gatsby.js V2 can be found at:**
 <br/>
 **https://github.com/codebushi/gatsby-starter-dimension-v2**
 
