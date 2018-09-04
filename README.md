@@ -3,6 +3,7 @@
 **This is a starter for Gatsby.js V1.**
 
 **A newer version of this starter, for Gatsby.js V2 can be found at:**
+<br/>
 **https://github.com/codebushi/gatsby-starter-dimension-v2**
 
 Gatsby starter based on the Dimension site template, designed by [HTML5 UP](https://html5up.net/dimension). Check out https://codebushi.com/gatsby-starters/ for more Gatsby starters and templates.
