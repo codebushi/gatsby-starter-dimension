@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import PropTypes from 'prop-types'
 
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
@@ -11,7 +11,7 @@ class Main extends React.Component {
     let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
 
     return (
-      <div id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
+      <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
 
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Intro</h2>
@@ -71,11 +71,12 @@ class Main extends React.Component {
 }
 
 Main.propTypes = {
-  route: React.PropTypes.object,
-  article: React.PropTypes.string,
-  articleTimeout: React.PropTypes.bool,
-  onCloseArticle: React.PropTypes.func,
-  timeout: React.PropTypes.bool
+  route: PropTypes.object,
+  article: PropTypes.string,
+  articleTimeout: PropTypes.bool,
+  onCloseArticle: PropTypes.func,
+  timeout: PropTypes.bool,
+  setWrapperRef: PropTypes.func.isRequired,
 }
 
 export default Main
