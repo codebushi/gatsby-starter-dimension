@@ -37,7 +37,7 @@ class Main extends React.Component {
           {/* <span className="image main"><img src={pic03} alt="" /></span> */}
           <h4>What do you want to do with the rest of your life, and how is Expensify a step toward your long-term goals?</h4>
           <p>I seek to continue developing my technical skillsets, and work on engaging projects. Working at the intersection of fields like healthcare, technology, biotech, and in capacities like consulting and with startups has given me the opportunity to explore my interests. I seek opportunities that let me showcase my technical knowhow, but also emphasize the need to think creatively.</p>
-          <p>The ability to build solutions at scale with the help of software is what initially fascinated me. As I see it, building great products inside and out involves creating a culture of attention to detail, and for a developer that means your code has to be readable and be thoughtful of constraits.</p>
+          <p>The ability to build solutions at scale with the help of software is what initially fascinated me. As I see it, building great products inside and out involves creating a culture of attention to detail, and for a developer that means your code has to be readable and be thoughtful of constraints.</p>
           <p>At Expensify, I hope to work on a development team that pushes each other to make the best possible contributions, being mindful of product roadmaps and what good code looks like and reads like.</p>
           {close}
         </article>
@@ -46,6 +46,7 @@ class Main extends React.Component {
           <h2 className="major">Contact</h2>
           <h4>How did you hear about us? A job posting? Chalk on a sidewalk? From a friend? Let us know where you saw this opening.</h4>
           <p>I heard about Expensify from one of Lambda School's career coaches, and after reading about it on <a href="https://medium.com/@boliver/expensify-is-the-slack-of-accounting-40e4b6b1ef31">Medium</a>, decided to apply.</p>
+          <p>You can find my resume <a href="https://drive.google.com/open?id=1N4Gx5boTkwKBzIkOO5pVI6pJatwaVKQk">here</a>.</p>
           <ul className="icons">
             {/* <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li> */}
             {/* <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li> */}
