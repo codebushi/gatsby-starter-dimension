@@ -25,6 +25,7 @@ class Main extends React.Component {
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Coding History</h2>
           {/* <span className="image main"><img src={pic02} alt="" /></span> */}
+          <h4>What's your coding history? When did you start, and what have you done between then and now?</h4>
           <p>I'm a software developer, and recent graduate of Lambda School, a 7 month bootcamp that fosuses on project work, specifically team based work, along with computer science fundamentals.</p>
           <p>My skill set is geared towards web development, specifically Javascript and Python, and frameworks like React and Django.</p>
           <p>I'm a fast learner, and am conscientious about making the products I'm working on as great as possible. Please find me on <a href="https://github.com/sagardesai90">Github</a> to learn more about my recent work.</p>
@@ -33,36 +34,23 @@ class Main extends React.Component {
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
-          <span className="image main"><img src={pic03} alt="" /></span>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+          {/* <span className="image main"><img src={pic03} alt="" /></span> */}
+          <h4>What do you want to do with the rest of your life, and how is Expensify a step toward your long-term goals?</h4>
+          <p>I seek to continue developing my technical skillsets, and work on engaging projects. Working at the intersection of fields like healthcare, technology, biotech, and in capacities like consulting and with startups has given me the opportunity to explore my interests. I seek opportunities that let me showcase my technical knowhow, but also emphasize the need to think creatively.</p>
+          <p>The ability to build solutions at scale with the help of software is what initially fascinated me. As I see it, building great products inside and out involves creating a culture of attention to detail, and for a developer that means your code has to be readable and be thoughtful of constraits.</p>
+          <p>At Expensify, I hope to work on a development team that pushes each other to make the best possible contributions, being mindful of product roadmaps and what good code looks like and reads like.</p>
           {close}
         </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li><input type="submit" value="Send Message" className="special" /></li>
-              <li><input type="reset" value="Reset" /></li>
-            </ul>
-          </form>
+          <h4>How did you hear about us? A job posting? Chalk on a sidewalk? From a friend? Let us know where you saw this opening.</h4>
+          <p>I heard about Expensify from one of Lambda School's career coaches, and after reading about it on <a href="https://medium.com/@boliver/expensify-is-the-slack-of-accounting-40e4b6b1ef31">Medium</a>, decided to apply.</p>
           <ul className="icons">
-            <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
+            {/* <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li> */}
+            {/* <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li> */}
+            {/* <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li> */}
+            <li><a href="http://github.com/sagardesai90" className="icon fa-github"><span className="label">GitHub</span></a></li>
           </ul>
           {close}
         </article>
