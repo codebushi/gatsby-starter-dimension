@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import ReactPlayer from 'react-player'
 
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
@@ -25,7 +26,9 @@ class Main extends React.Component {
           <h2 className="major">Reels</h2>
           <span className="image main"><img src={pic01} alt="" /></span>
           <h4 className="major">Dramatic</h4>
+          <ReactPlayer url='https://vimeo.com/217247146' width='35rem' /><br></br>
           <h4 className="major">Comedic</h4>
+          <ReactPlayer url='https://vimeo.com/217246477' width='35rem'/>
           {close}
         </article>
 
