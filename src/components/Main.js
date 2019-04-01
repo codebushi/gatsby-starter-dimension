@@ -21,6 +21,14 @@ class Main extends React.Component {
           {close}
         </article>
 
+        <article id="reels" className={`${this.props.article === 'reels' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">Reels</h2>
+          <span className="image main"><img src={pic01} alt="" /></span>
+          <h4 className="major">Dramatic</h4>
+          <h4 className="major">Comedic</h4>
+          {close}
+        </article>
+
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Work</h2>
           <span className="image main"><img src={pic02} alt="" /></span>
