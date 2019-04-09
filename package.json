@@ -22,7 +22,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    “heroku-postbuild”: “gatsby build”
   },
   "devDependencies": {
     "prettier": "^1.14.2"
@@ -31,4 +32,5 @@
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   }
+ 
 }
