@@ -1,8 +1,6 @@
-# gatsby-starter-dimension
+# adunis-portofolio-
 
-**This is a starter for Gatsby.js V2.**
-
-**The older V1 version of this starter can be found on the v1 branch:**
+**This website was forked from a starter for Gatsby.js V2.**
 
 Gatsby.js V2 starter based on the Dimension site template, designed by HTML5 UP. Check out https://codebushi.com/gatsby-starters/ for more Gatsby starters and templates.
 
