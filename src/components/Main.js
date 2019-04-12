@@ -14,19 +14,97 @@ class Main extends React.Component {
       <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
 
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">How I work</h2>
-          <span className="image main"><img src={pic01} alt="" /></span>
-          <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+          <h2 className="major">My design process</h2>
+        
+         <p>The best way to present myself to the world its to show how actually I like to organize and manage my work - rather than showing off some fancy UI which the web it’s already full of. Here’s a little summary of what I’m going to explain. There are the key points of my designing process:
+
+<ul><li>I don’t make up user’s needs - I obtain them from surveys and interviews </li>
+<li>I don’t design for the sake of designing - I design to solve a real problem </li>
+<li>I don’t design according to how I think it should be - I design according to data </li>
+<li>I don’t argue with teamates - We build prototypes and watch how users behave </li>
+
+</ul>
+</p>
+          
+          <p> 
+          	<h3>Overview and Problem Statement </h3>
+
+        The perfectly concise, beautifully worded snippet that explains months (or even years) of intense work that helped grasp the problem you were solving. Sounds easy, ya? (Nope, super tough.).</p>
+
+        <span className="image main"><img src={pic01} alt="" /></span>
+         
+   <p> 
+          	<h3>Users and audience</h3>
+
+        Dispel all doubts by clearly stating who you were designing for. Put a face on the project: single mothers that don’t have time to shop for food, recent graduates who don’t understand their student loans, or tourists that have trouble finding a good cup of coffee. Develop personas. 
+
+       <span className="image main"><img src={pic01} alt="" /></span>
+
+        </p>
+
+  <p> 
+          	<h3>Design Process</h3>
+
+
+<span className="image main"><img src={pic01} alt="" /></span>
+
+
+</p> 
+
           {close}
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">About me</h2>
-          <span className="image main"><img src={pic03} alt="" /></span>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-          {close}
+          <h2 className="major">My philosophy</h2>
+
+    <p><h3>An User shouldn't have questions</h3>
+       </p>
+
+       <p><h3>Design is a set of tools, not a standardized process </h3>
+Every problem presents its own unique set of characteristics, as such there is no one-size-fits-all process for coming to the best solution. The art of design is about having a diverse set of tools and approaches, and determining when to apply each. To quote Maslow, “…it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail” — so always carry a hammer, a screw driver, a pair of pliers and a hex wrench.
+		</p>
+
+       <p><h3>But he should be free toe explore (Gamification / Users fidelity / good design is in the details / microinteractions) </h3>
+       Micro-interactions are events which have one main task — a single purpose — and they’re found all over your device and within apps. Their purpose is to delight the user; to create a moment that is engaging, welcoming and, dare we say it — human.
+
+       . Attention to details is what basically differs an an exceptional website from ordinary one. 
+
+       Swipe, Loading bars, animations, focusing on an action (blur outside for example, zoom on the buttons, aiming down a rifle in CoD)
+       </p>
+
+        <p><h3>Illusory minimalism - a lot of options withou enough sub-menus </h3>
+       Micro-interactions are events which have one main task — a single purpose — and they’re found all over your device and within apps. Their purpose is to delight the user; to create a moment that is engaging, welcoming and, dare we say it — human.
+
+       . Attention to details is what basically differs an an exceptional website from ordinary one. 
+
+       Swipe, Loading bars, animations, focusing on an action (blur outside for example, zoom on the buttons, aiming down a rifle in CoD)
+       </p>
+
+       <p><h3>User should feel good</h3>
+       </p>
+
+       <p><h3>Design is a set of tools, not a standardized process </h3>
+Every problem presents its own unique set of characteristics, as such there is no one-size-fits-all process for coming to the best solution. The art of design is about having a diverse set of tools and approaches, and determining when to apply each. To quote Maslow, “…it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail” — so always carry a hammer, a screw driver, a pair of pliers and a hex wrench.
+
+
+		</p>
+
+
+  <p><h3>Design as if it was a river, not a rock</h3>
+    Design changes with time and with trends. One of the most important elements of a good design it's using pattern that the user is accostumed to. If all of a sudden a big player like Facebook, Google or Amazon changes how his services are accessed, all the their users will except to find similiar patterns in all the rest of the ecosystem.
+  </p>
+
+
+
+
+        {close}
         </article>
+
+
+
+
+
+
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
@@ -53,6 +131,7 @@ class Main extends React.Component {
             <li><a href="https://www.instagram.com/ramingau/" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
              <li><a href="https://www.linkedin.com/in/a-petrovic/" className="icon fa-linkedin"><span className="label">GitHub</span></a></li>
             <li><a href="https://github.com/adunis" className="icon fa-github"><span className="label">GitHub</span></a></li>
+
           </ul>
 
               </form>
