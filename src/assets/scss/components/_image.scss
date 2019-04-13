@@ -6,14 +6,34 @@
 
 /* Image */
 
-.articleimg {
-    border-radius: 20%;
+
+.avatar{
+  display: inline-block;
+  float: right;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.wireframeimg{
+	border-radius: 5%;
     display: inline-block;
     float: right;
     margin-left: 3em;
     margin-bottom: 1em;
     max-width: 100%;
-    height: auto;
+	height:20em;
+
+}
+
+.articleimg {
+    border-radius: 5%;
+    display: inline-block;
+    float: right;
+    margin-left: 3em;
+    margin-bottom: 1em;
+    max-width: 100%;
+    height: 50%;
 }
 
 .image {

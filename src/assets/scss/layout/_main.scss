@@ -6,6 +6,7 @@
 
 /* Main */
 
+
 #main {
     @include vendor('flex-grow', '1');
     @include vendor('flex-shrink', '1');
@@ -14,6 +15,7 @@
     @include vendor('justify-content', 'center');
     @include vendor('flex-direction', 'column');
     position: relative;
+    overflow: hidden;
     max-width: 100%;
     z-index: 3;
     display: none;
@@ -22,6 +24,7 @@
         @include vendor('transition', ( 'opacity #{_duration(article)} ease-in-out', 'transform #{_duration(article)} ease-in-out'));
         @include padding(2.5rem, 2.5rem, (2rem, 0, 1rem, 0));
         position: relative;
+            overflow: hidden;
         width: 60rem;
         max-width: 100%;
         background-color: transparentize(_palette(bg), 0.2);
