@@ -80,7 +80,6 @@ Another one is to consider pattern used by large companies. Users are accustomed
 </blockquote></p>
 
 
-
 <h1>PROTOTYPING</h1>
 
 <img className='articleimg' src="https://i.imgur.com/8gNleCN.pngg"/>
@@ -101,12 +100,7 @@ Another one is to consider pattern used by large companies. Users are accustomed
 </li>
           </ul>
 
-
 <p></p>
-<blockquote>We start defining our app by deciding that it will have a Login screen, the Main which will change depending if the user is a Trainer or a Trainee. An harmburger button at the top left will lets access to multiple options for the Trainers. The app will be focused on the Trainers and Trainee communication, so it should feel similar to a chat app like Whatsapp or Telegram. We use Card Sorting with 10 people to decide in which order will things pop-up from the hamburger menu.   
-</blockquote></p>
-
-
 
 
 <h1>PRESENTATION</h1>
@@ -114,13 +108,13 @@ Another one is to consider pattern used by large companies. Users are accustomed
 
 <p>It’s time to go as fancy as possible and pimp up your prototype. It’s time to be a Visual Designer and start making mockups and high fidelity wireflows of your app. Every bit of information we gathered along the way should be condensed in this document - which will explain every single choice we made. It’s at this point that we will have the story of this app and how it was born from a simple idea and became something *physical* among us. Even if the project didn’t came up as we thought, we have to sell it as the magnum opus of our career. 
 <p></p>
-<blockquote>In this case study our client is a national gym chain that needs an android app which will help the trainers follow their clients. This app will also help the clients remind them of their trainings and workouts routines.</blockquote></p>
+<blockquote>We take our prototypes and make a <i>high-fidelity Wireflow</i> - which its just a prototype with the ultimated UI and each decision taken during our project motivate through data. Using numbers its usually the best idea, but in some cases qualitive data works best for those clients that want to hear a <i>good story</i>.</blockquote></p>
 
 
 <h1>AFTER THOUGHTS</h1>
 
 
-<p>We start by defining what the client wants to achieve by having us design his app. We do this by conducting an interview with him. We are done with this phase once we can define exactly a real problem we can have a solution to.
+<p>After the project is considered finished - writing done what lessons we learned and what we would change if we could start over is a good idea. Rereading our past studies and add annotiations taking in consideration what new tools and techniques we learned would be a good idea. 
 <p></p>
 <blockquote>In this case study our client is a national gym chain that needs an android app which will help the trainers follow their clients. This app will also help the clients remind them of their trainings and workouts routines.</blockquote></p>
 
@@ -140,7 +134,7 @@ Another one is to consider pattern used by large companies. Users are accustomed
        <p></p>
 
 
-     <p>My name is Aleksandar and I'm an UX Designer in learning. I also have some bits of programming konwledge as I tackled a little with React and various libraries. I also studied for some years Computer Science.  My passion is making <a href="https://baldrsglade.bandcamp.com/"> music </a> on and playing D&D. Currently I'm living in Northern Italy, but I have no issues with moving around the globe.</p>
+     <p>My name is Aleksandar and I'm an UX Designer in learning. I have some bits of programming knowledge as I tackled a little with React and various libraries. I also studied for some years Computer Science.  My passion is making <a href="https://baldrsglade.bandcamp.com/"> music </a> and playing D&D. Currently I'm living in Northern Italy, but I have no issues with moving around the globe.</p>
             {close}
         </article>
 
