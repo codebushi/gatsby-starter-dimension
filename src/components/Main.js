@@ -43,12 +43,12 @@ class Main extends React.Component {
 
 <h1>USER RESEARCH</h1>
 
-<img className='articleimg' src="https://i.imgur.com/zz6Clgx.png"/>
+<img className='articleimg' src="https://i.imgur.com/99q8xEL.png"/>
 
 <p>In this phase we need to do surveys and interviews with our users. We also have additional tools which we can use - such as creating one or multiple <b>User Personas</b>, which will help everyone involved in this project to keep them focused at who the app is aimed to. We can use <b>User Stories</b> to help us define how the app should be actually built and what it should allow the users to do. 
 <p></p>
 <blockquote>
-We interviewed 5 personal trainer nd 10 people nterested in personal trainer services, since only one person was available, each session was recorded in order to be analyzed later.  
+We interviewed 5 personal trainer and 10 people interested in personal trainer services, since only one person was available, each session was recorded in order to be analyzed later.  
 
 We try to don’t railroad the questions too much - letting the potential users express themselves and even make their own questions lets us explore new ideas. For this very reason it’s harder or even useless to extract from it some numerical data. Instead we gather the responses and make a <b>Word cloud</b> or a <b>Mind map</b> out of it. 
 
@@ -84,7 +84,7 @@ Another one is to consider pattern used by large companies. Users are accustomed
 
 <h1>PROTOTYPING</h1>
 
-<img className='articleimg' src="https://i.imgur.com/8lMC1Zl.png"/>
+<img className='articleimg' src="https://i.imgur.com/4Cs29S1.png"/>
 
 <p>We defined what our app should do and its whole structure is defined. It’s probably the best time to make sure our client is liking what our team has came up with - even though we should always be in contact with him 24/7. We should open our Sketch apps or analogue software and start recreating our wireframes with a nicer UI. Following Material-UI or Human Interface guidelines should be accounted, as the most recent trends. A quick search on Pinterest should be done just to be sure to not design something out of place. 
 <p></p>
@@ -135,42 +135,26 @@ Another one is to consider pattern used by large companies. Users are accustomed
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
 
-      <img className="avatar" src="https://i.imgur.com/eTGEgCn.png"/>
+
 
           <h2 className="major">About me</h2>
-  
+    <p></p>
+
+      <img className="avatar" src="https://i.imgur.com/eTGEgCn.png"/>
+      <p></p> 
+       <p></p>
 
 
-
-            <p><h2>My photo, I can code, I make music yaddayadda my story</h2></p>
+     <p><h4>My photo, I can code, I make music yaddayadda my story</h4></p>
             {close}
         </article>
 
 
+          <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none'}}>
+            <h2 className="major">Contacts</h2>
 
-
-
-
-
-          <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
-            <h2 className="major">Contact</h2>
-            <form method="post" action="#">
-              <div className="field half first">
-                <label htmlFor="name">Name</label>
-                <input type="text" name="name" id="name" />
-              </div>
-              <div className="field half">
-                <label htmlFor="email">Email</label>
-                <input type="text" name="email" id="email" />
-              </div>
-              <div className="field">
-                <label htmlFor="message">Message</label>
-                <textarea name="message" id="message" rows="4"></textarea>
-              </div>
-              <ul className="actions">
-                <li><input type="submit" value="Send Message" className="special" /></li>
-                <li><input type="reset" value="Reset" /></li>
-              </ul>
+            <div style={{float:'middle'}}>
+           <a href="mailto:aleksandarpetrovic101@gmail.com">aleksandarpetrovic101@gmail.com</a>
 
               <ul className="icons">
                 <li><a href="https://twitter.com/aledarpetr" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
@@ -179,8 +163,8 @@ Another one is to consider pattern used by large companies. Users are accustomed
                 <li><a href="https://github.com/adunis" className="icon fa-github"><span className="label">GitHub</span></a></li>
 
               </ul>
-
-            </form>
+</div>
+     
             {close}
           </article>
 
