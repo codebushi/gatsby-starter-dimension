@@ -11,6 +11,16 @@
     text-align: center;
 }
 
+
+@media screen and (max-width: 320 px){
+
+.intro{
+    
+font:50em
+
+}
+}
+
 ol {
     list-style: decimal;
     margin: 0 0 _size(element-margin) 0;
