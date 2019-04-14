@@ -114,7 +114,7 @@ Another one is to consider pattern used by large companies. Users are accustomed
 <h1>AFTER THOUGHTS</h1>
 
 
-<p>After the project is considered finished - writing done what lessons we learned and what we would change if we could start over is a good idea. Rereading our past studies and add annotiations taking in consideration what new tools and techniques we learned would be a good idea. 
+<p>After the project is considered finished - writing done what lessons we learned and what we would change if we could start over is a good idea. Rereading our past studies and add annotiations taking in consideration what new tools and techniques we learned would be a good idea. </p>
 <p></p>
 <blockquote>In this case study our client is a national gym chain that needs an android app which will help the trainers follow their clients. This app will also help the clients remind them of their trainings and workouts routines.</blockquote></p>
 
