@@ -36,7 +36,7 @@ class Main extends React.Component {
 <a target="_blank" href="https://mytrainerapp.studio.design/">This</a> is a mockup of a case study. Here you can see what is my design process and my principles regarding UX design.
 <p></p>
 <h3>This Website </h3>
-This web-site run using Gatsby.js showcases that I have basic understanding of Front-end developing.
+This web-site is run using Gatsby.js and versioned through  <a href="https://github.com/adunis/adunis-portfolio" className="icon fa-github"><span className="label">Github</span> Github</a>, showcases that I have basic understanding of Front-end developing.
 <p></p>
 </p></div>
 
