@@ -16,9 +16,16 @@ module.exports = {
         theme_color: '#1d5866',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
-      },
+      }
     },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+      {
+        resolve: `gatsby-plugin-google-analytics`,
+        options: {
+          // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+          trackingId: "UA-XXXXXXXXX-X",
+        }
+      },
+      'gatsby-plugin-sass',
+      'gatsby-plugin-offline'
   ],
 }
