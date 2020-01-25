@@ -176,7 +176,7 @@
 
   .body.is-article-visible & {
     @include vendor('transform', 'scale(0.95)');
-    @include vendor('filter', 'blur(0.1rem)');
+    // @include vendor('filter', 'blur(0.1rem)');
     opacity: 0;
   }
 
@@ -185,7 +185,7 @@
       opacity: 0;
     }
 
-    @include vendor('filter', 'blur(0.125rem)');
+    // @include vendor('filter', 'blur(0.125rem)');
 
     .content {
       .inner {
