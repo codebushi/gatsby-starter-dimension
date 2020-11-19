@@ -19,5 +19,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "fonts",
+        path: `${__dirname}/src/assets/fonts/`
+      }
+    }
   ],
 }

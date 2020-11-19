@@ -1,0 +1,8 @@
+	@font-face {
+		font-family: 'Avenir';
+		font-weight: 400;
+		font-style: normal;
+		src: url("AvenirNextLTPro-Regular.otf") format("otf");
+		font-display: swap;
+	}
+
