@@ -43,6 +43,7 @@
 
 			&.active {
 				display: block !important;
+				background-color: _palette(popup-bg);
 			}
 
 			.close {
