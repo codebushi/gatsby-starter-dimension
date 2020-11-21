@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-dimension-v2",
-  "description": "Gatsby Starter - Dimension V2",
+  "name": "maple-beta",
+  "description": "MAPLE Beta",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Josh Seltzer",
   "dependencies": {
     "gatsby": "^2.19.5",
     "gatsby-plugin-manifest": "^2.2.38",
