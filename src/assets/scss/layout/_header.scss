@@ -4,8 +4,72 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
-/* Header */
+/* Nav */
+nav {
+  ul {
+    @include vendor('display', 'flex');
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+    border: solid _size(border-width) _palette(border);
+    border-radius: _size(border-radius);
 
+    li {
+      padding-left: 0;
+      border-left: solid _size(border-width) _palette(border);
+
+      &:first-child {
+        border-left: 0;
+      }
+
+      button {
+        display: block;
+        min-width: 7.5rem;
+        height: 2.75rem;
+        line-height: 2.75rem;
+        padding: 0 1.25rem 0 (1.25rem + _font(letter-spacing));
+        text-transform: uppercase;
+        letter-spacing: _font(letter-spacing);
+        font-size: 0.8rem;
+        font-family: _font(family);
+        border: none;
+        box-shadow: none;
+
+        &:hover,
+        &:focus {
+          background-color: _palette(border-bg);
+        }
+
+        &:active {
+          background-color: _palette(border-bg-alt);
+        }
+      }
+    }
+  }
+
+  &.use-middle {
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: calc(50% - #{_size(border-width) * 1});
+      width: _size(border-width);
+      height: 100%;
+      background: _palette(border);
+    }
+
+    ul {
+      li {
+        &.is-middle {
+          border-left: 0;
+        }
+      }
+    }
+  }
+}
+
+/* Header */
 #header {
   @include vendor('display', 'flex');
   @include vendor('flex-direction', 'column');
@@ -17,22 +81,6 @@
       'filter #{_duration(article)} ease-in-out',
       'opacity #{_duration(article)} ease-in-out'
     )
-  );
-  background-image: -moz-radial-gradient(
-    rgba(0, 0, 0, 0.25) 25%,
-    rgba(0, 0, 0, 0) 55%
-  );
-  background-image: -webkit-radial-gradient(
-    rgba(0, 0, 0, 0.25) 25%,
-    rgba(0, 0, 0, 0) 55%
-  );
-  background-image: -ms-radial-gradient(
-    rgba(0, 0, 0, 0.25) 25%,
-    rgba(0, 0, 0, 0) 55%
-  );
-  background-image: radial-gradient(
-    rgba(0, 0, 0, 0.25) 25%,
-    rgba(0, 0, 0, 0) 55%
   );
   max-width: 100%;
   text-align: center;
@@ -68,6 +116,10 @@
     line-height: 5.5rem;
     border: solid _size(border-width) _palette(border);
     border-radius: 100%;
+    background-image: url('../../images/Meerus_bg_small.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     .icon {
       &:before {
@@ -83,7 +135,19 @@
     border-bottom-width: _size(border-width);
     max-width: 100%;
 
+    .inner-logo {
+      position: absolute;
+      width: 100px;
+      height: 40px;
+      margin-top: -40px;
+      background-image: url('../../images/intercultural_skills_lab_black.png');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
     .inner {
+      text-align: left;
       @include vendor(
         'transition',
         (
@@ -107,70 +171,6 @@
       letter-spacing: _font(letter-spacing);
       font-size: 0.8rem;
       line-height: 2;
-    }
-  }
-
-  nav {
-    ul {
-      @include vendor('display', 'flex');
-      margin-bottom: 0;
-      list-style: none;
-      padding-left: 0;
-      border: solid _size(border-width) _palette(border);
-      border-radius: _size(border-radius);
-
-      li {
-        padding-left: 0;
-        border-left: solid _size(border-width) _palette(border);
-
-        &:first-child {
-          border-left: 0;
-        }
-
-        button {
-          display: block;
-          min-width: 7.5rem;
-          height: 2.75rem;
-          line-height: 2.75rem;
-          padding: 0 1.25rem 0 (1.25rem + _font(letter-spacing));
-          text-transform: uppercase;
-          letter-spacing: _font(letter-spacing);
-          font-size: 0.8rem;
-          font-family: _font(family);
-          border: none;
-          box-shadow: none;
-
-          &:hover,
-          &:focus {
-            background-color: _palette(border-bg);
-          }
-
-          &:active {
-            background-color: _palette(border-bg-alt);
-          }
-        }
-      }
-    }
-
-    &.use-middle {
-      &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: calc(50% - #{_size(border-width) * 1});
-        width: _size(border-width);
-        height: 100%;
-        background: _palette(border);
-      }
-
-      ul {
-        li {
-          &.is-middle {
-            border-left: 0;
-          }
-        }
-      }
     }
   }
 

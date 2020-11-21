@@ -2,31 +2,21 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const Header = props => (
-  <header id="header" style={props.timeout ? { display: 'none' } : {}}>
-    <div className="logo">
-      <span className="icon fa-diamond"></span>
-    </div>
-    <div className="content">
-      <div className="inner">
-        <h1>Dimension</h1>
-        <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
-          <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
-        </p>
-      </div>
-    </div>
+  <>
     <nav>
       <ul>
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('intro')
+              props.onOpenArticle('about')
+            }}
+            style={{
+              position: 'absolute',
+              top: '10px',
+              left: '10px'
             }}
           >
-            Intro
+            Instructions
           </button>
         </li>
         <li>
@@ -34,14 +24,24 @@ const Header = props => (
             onClick={() => {
               props.onOpenArticle('work')
             }}
+            style={{
+              position: 'absolute',
+              top: '10px',
+              right: '10px'
+            }}
           >
-            Work
+            Share
           </button>
         </li>
         <li>
           <button
             onClick={() => {
               props.onOpenArticle('about')
+            }}
+            style={{
+              position: 'absolute',
+              bottom: '10px',
+              left: '10px'
             }}
           >
             About
@@ -52,13 +52,42 @@ const Header = props => (
             onClick={() => {
               props.onOpenArticle('contact')
             }}
+            style={{
+              position: 'absolute',
+              bottom: '10px',
+              right: '10px'
+            }}
           >
             Contact
           </button>
         </li>
       </ul>
     </nav>
-  </header>
+    <header id="header" style={props.timeout ? { display: 'none' } : {}}>
+      <div className="logo"></div>
+      <div className="content">
+        <div class="inner-logo"></div>
+        <div className="inner">
+          <h1>MAPLE</h1>
+          <h2>A cultural assessment tool</h2>
+          <h6>BETA VERSION</h6>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <button
+              onClick={() => {
+                props.onOpenArticle('intro')
+              }}
+            >
+              Take The Test
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </>
 )
 
 Header.propTypes = {
