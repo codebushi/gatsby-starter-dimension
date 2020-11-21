@@ -6,13 +6,15 @@
 
 /* Nav */
 nav {
+  ul.ul-border {
+    border: solid _size(border-width) _palette(border);
+    border-radius: _size(border-radius);
+  }
   ul {
     @include vendor('display', 'flex');
     margin-bottom: 0;
     list-style: none;
     padding-left: 0;
-    border: solid _size(border-width) _palette(border);
-    border-radius: _size(border-radius);
 
     li {
       padding-left: 0;
@@ -139,7 +141,7 @@ nav {
       position: absolute;
       width: 100px;
       height: 40px;
-      margin-top: -40px;
+      margin-top: -50px;
       background-image: url('../../images/intercultural_skills_lab_black.png');
       background-position: center;
       background-size: contain;

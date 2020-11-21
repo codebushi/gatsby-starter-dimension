@@ -74,7 +74,7 @@ const Header = props => (
         </div>
       </div>
       <nav>
-        <ul>
+        <ul class="ul-border">
           <li>
             <button
               onClick={() => {
