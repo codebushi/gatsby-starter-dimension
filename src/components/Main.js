@@ -76,7 +76,7 @@ class Main extends React.Component {
         >
           <h2 className="major">About</h2>
           <span className="image main no-overlay">
-            <img src={banner_isl} alt="" style={{border: '20px solid white'}} />
+            <img src={banner_isl} alt="Intercultural Skills Lab - Banner" />
           </span>
           <p>
             Culture is diverse, vibrant, complex and intricate and the MAPLE (Mutual Acculturation Profile
