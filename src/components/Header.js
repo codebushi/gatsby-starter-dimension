@@ -7,9 +7,8 @@ const Header = props => (
       <ul>
         <li>
           <button
-            onClick={() => {
-              props.onOpenArticle('about')
-            }}
+            onClick={() => props.onOpenArticle('intro')}
+            disabled={props.isArticleVisible}
             style={{
               position: 'absolute',
               top: '10px',
@@ -21,9 +20,8 @@ const Header = props => (
         </li>
         <li>
           <button
-            onClick={() => {
-              props.onOpenArticle('work')
-            }}
+            onClick={() => props.onOpenArticle('work')}
+            disabled={props.isArticleVisible}
             style={{
               position: 'absolute',
               top: '10px',
@@ -35,9 +33,8 @@ const Header = props => (
         </li>
         <li>
           <button
-            onClick={() => {
-              props.onOpenArticle('about')
-            }}
+            onClick={() => props.onOpenArticle('work')}
+            disabled={props.isArticleVisible}
             style={{
               position: 'absolute',
               bottom: '10px',
@@ -49,9 +46,8 @@ const Header = props => (
         </li>
         <li>
           <button
-            onClick={() => {
-              props.onOpenArticle('contact')
-            }}
+            onClick={() => props.onOpenArticle('contact')}
+            disabled={props.isArticleVisible}
             style={{
               position: 'absolute',
               bottom: '10px',
