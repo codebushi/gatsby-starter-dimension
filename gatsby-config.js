@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'MAPLE Beta',
     author: 'Josh Seltzer',
-    description: 'A Gatsby.js website based on Dimension V2 by Hunter Chang',
+    description: 'MAPLE Beta - Intercultural Skills Lab',
+    url: 'https://interculturalskillslab.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
