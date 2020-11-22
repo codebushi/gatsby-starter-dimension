@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
+import { Link } from "gatsby";
 import { useMedia } from 'react-media';
 import {
   FacebookShareButton,
@@ -131,13 +132,12 @@ const Header = props => {
         <nav>
           <ul className="ul-border">
             <li>
-              <button
-                onClick={() => {
-                  props.onOpenArticle('instructions')
-                }}
-              >
-                Take The Test
-              </button>
+              <Link to='https://inca.nexxt.in/p/MAPLE_LITE'>
+                <button
+                >
+                  Take The Test
+                </button>
+              </Link>
             </li>
           </ul>
         </nav>
