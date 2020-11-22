@@ -7,7 +7,7 @@ const Header = props => (
       <ul>
         <li>
           <button
-            onClick={() => props.onOpenArticle('intro')}
+            onClick={() => props.onOpenArticle('instructions')}
             disabled={props.isArticleVisible}
             style={{
               position: 'absolute',
@@ -62,7 +62,7 @@ const Header = props => (
     <header id="header" style={props.timeout ? { display: 'none' } : {}}>
       <div className="logo"></div>
       <div className="content">
-        <div class="inner-logo"></div>
+        <div className="inner-logo"></div>
         <div className="inner">
           <h1>MAPLE</h1>
           <h2>A cultural assessment tool</h2>
@@ -70,11 +70,11 @@ const Header = props => (
         </div>
       </div>
       <nav>
-        <ul class="ul-border">
+        <ul className="ul-border">
           <li>
             <button
               onClick={() => {
-                props.onOpenArticle('intro')
+                props.onOpenArticle('instructions')
               }}
             >
               Take The Test

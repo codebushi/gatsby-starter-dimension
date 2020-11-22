@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
+import icon_clock from '../images/icon_clock.png'
+import icon_computer from '../images/icon_computer.png'
+import icon_share from '../images/icon_share.png'
 import banner_isl from '../images/banner_isl.png'
 import pic03 from '../images/pic03.jpg'
 
@@ -22,36 +24,46 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+          id="instructions"
+          className={`${this.props.article === 'instructions' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
           <h2 className="major">Instructions</h2>
-          <span className="image main">
-            <img src={pic01} alt="" />
-          </span>
-          <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#about">awesome work</a>.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
-          </p>
+          <div className="image-with-span">
+            <img src={icon_computer} alt="" />
+            <span>
+              This web-based assessment works best on <b>Chrome, Edge or Firefox</b> (if they are not
+              your default browser, copy and paste the link to one of those browsers). Meerus the
+              chatbot will guide you through the various sections. The questions are accompanied by
+              images, so pick on the images that reflect the way you naturally behave or interact rather
+              than how you think you should behave. There are no right or wrong answers. We
+              recognize that your responses to some of the questions could be a “maybe” or “it
+              depends”. Go with your instinctive response and what you are likely to do most often.
+            </span>
+          </div>
+          <div className="image-with-span">
+            <img src={icon_clock} alt="" />
+            <span>
+              The test will take approximately 25-30 minutes to complete. For a good user experience,
+              we request that you complete the assessment in one sitting. The time you take to
+              complete will depend on whether you respond instinctively or give a lot of care and
+              thought to your responses. There are open-ended questions that require a written
+              response. Please try and respond to the questions as you would in a work setting. Our
+              advice is to relax, reflect and have fun!
+            </span>
+          </div>
+          <div className="image-with-span">
+            <img src={icon_share} alt="" />
+            <span>
+              The current beta version is limited to four profiles. More profiles and strategies to
+              develop your intercultural competence will be available in the final release version.
+              Thank-you for contributing to our research. It would be very helpful <b>if you could share
+              this beta test across your networks</b> and to whomever you feel would benefit or be
+              interested in such an assessment.
+            </span>
+          </div>
           {close}
         </article>
 

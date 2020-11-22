@@ -10,6 +10,15 @@
 	background-color: rgba(0, 0, 0, 0) !important;
 }
 
+.image-with-span {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	span {
+		padding: 20px;
+	}
+}
+
 	#main {
 		@include vendor('flex-grow', '1');
 		@include vendor('flex-shrink', '1');
