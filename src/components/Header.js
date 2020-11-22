@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
+import { useMedia } from 'react-media';
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -13,31 +14,13 @@ import {
   EmailIcon
 } from 'react-share';
 
-const getWindowDimensions = () => {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height
-  };
-}
-
-
 const Header = props => {
   const handleClick = (article) => {
     setShowShareMenu(false);
     props.onOpenArticle(article);
   }
   const [showShareMenu, setShowShareMenu] = useState(false);
-  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-  const IS_MOBILE = windowDimensions.width < 1024; 
+  const isSmallScreen = useMedia({ query: "(max-width: 1024px)" });
   return (
     <>
       <nav>
@@ -71,7 +54,7 @@ const Header = props => {
               <div
                 style={{
                   position: 'absolute',
-                  top: IS_MOBILE ? '50px' : '80px',
+                  top: isSmallScreen ? '50px' : '80px',
                   right: '10px',
                   width: '7.5rem',
                   fontSize: '14px',
@@ -81,27 +64,27 @@ const Header = props => {
               >
                 <FacebookShareButton url={'https://interculturalskillslab.com'} style={{height: 'inherit'}} >
                   <span className="icon">
-                    <FacebookIcon size={IS_MOBILE ? 16 : 32} round={true} />
+                    <FacebookIcon size={isSmallScreen ? 16 : 32} round={true} />
                   </span>
                 </FacebookShareButton>
                 <TwitterShareButton url={'https://interculturalskillslab.com'} className="is-rounded twitter" title={'MAPLE Beta'} style={{height: 'inherit'}} >
                   <span className="icon">
-                    <TwitterIcon size={IS_MOBILE ? 16 : 32} round={true} />
+                    <TwitterIcon size={isSmallScreen ? 16 : 32} round={true} />
                   </span>
                 </TwitterShareButton>
                 <LinkedinShareButton url={'https://interculturalskillslab.com'} className="is-rounded linkedin" title={'MAPLE Beta'} style={{height: 'inherit'}} >
                   <span className="icon">
-                    <LinkedinIcon size={IS_MOBILE ? 16 : 32} round={true} />
+                    <LinkedinIcon size={isSmallScreen ? 16 : 32} round={true} />
                   </span>
                 </LinkedinShareButton>
                 <WhatsappShareButton url={'https://interculturalskillslab.com'} className="is-rounded whatsapp" title={'MAPLE Beta'} style={{height: 'inherit'}} >
                   <span className="icon">
-                    <WhatsappIcon size={IS_MOBILE ? 16 : 32} round={true} />
+                    <WhatsappIcon size={isSmallScreen ? 16 : 32} round={true} />
                   </span>
                 </WhatsappShareButton>
                 <EmailShareButton url={'https://interculturalskillslab.com'} className="is-rounded email" title={'MAPLE Beta'} style={{height: 'inherit'}} >
                   <span className="icon">
-                    <EmailIcon size={IS_MOBILE ? 16 : 32} round={true} />
+                    <EmailIcon size={isSmallScreen ? 16 : 32} round={true} />
                   </span>
                 </EmailShareButton>
               </div>
