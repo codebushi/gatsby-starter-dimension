@@ -18,6 +18,16 @@
 		padding: 20px;
 	}
 }
+@media (max-width: 1023px) {
+  .image-with-span {
+	display: block;
+	text-align: center;
+	span {
+		display: block;
+		text-align: left;
+	}
+  }
+}
 
 	#main {
 		@include vendor('flex-grow', '1');
