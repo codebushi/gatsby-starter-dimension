@@ -20,7 +20,7 @@ const Header = props => (
         </li>
         <li>
           <button
-            onClick={() => props.onOpenArticle('work')}
+            onClick={() => props.onOpenArticle('share')}
             disabled={props.isArticleVisible}
             style={{
               position: 'absolute',
@@ -33,7 +33,7 @@ const Header = props => (
         </li>
         <li>
           <button
-            onClick={() => props.onOpenArticle('work')}
+            onClick={() => props.onOpenArticle('about')}
             disabled={props.isArticleVisible}
             style={{
               position: 'absolute',

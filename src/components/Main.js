@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
+import banner_isl from '../images/banner_isl.png'
 import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
@@ -28,7 +28,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">Instructions</h2>
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
@@ -37,7 +37,7 @@ class Main extends React.Component {
             aliquam facilisis ante interdum congue. Integer mollis, nisl amet
             convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
             magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            By the way, check out my <a href="#about">awesome work</a>.
           </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -56,35 +56,6 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">Work</h2>
-          <span className="image main">
-            <img src={pic02} alt="" />
-          </span>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
-          {close}
-        </article>
-
-        <article
           id="about"
           className={`${this.props.article === 'about' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
@@ -92,6 +63,44 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">About</h2>
+          <span className="image main no-overlay">
+            <img src={banner_isl} alt="" style={{border: '20px solid white'}} />
+          </span>
+          <p>
+            Culture is diverse, vibrant, complex and intricate and the MAPLE (Mutual Acculturation Profile
+            and Learning Engine) cultural assessment tool captures this richness and energy in its design
+            and structure. Using a gamified and visual approach the tool offers insights into how cultural
+            values influence our behaviour and communication styles in the workplace. Led by our friendly
+            chat-bot Meerus the user experience is engaging, interactive and self-reflective.
+          </p>
+          <p>
+            Traditionally culture has been associated with the countries it resides in. Current cultural
+            assessment tools often use national boundaries as a proxy for culture and provide profiles in
+            relation to a nationality. What makes MAPLE unique, is that, it captures both cultural values and
+            communicating styles to create profiles that are not localized and set in nationality. The MAPLE
+            reports use profile names that are synthetic and imaginary but the cultures they represent are
+            real and are reflective of the cultural identities that globalization influences and enhances.
+          </p>
+          <p>
+            The Intercultural Skills Lab at Rotman promotes a deeper understanding of intercultural
+            competencies to support individuals and organizations to function effectively across cultures.
+            When a person learns about the cultural values that drive them, they gain a real understanding
+            of why they behave, interact and communicate the way they do and how others perceive and
+            relate to them. This understanding can be used to improve their daily interactions in any cross-
+            cultural situation, adapt to different work environments and create inclusive teams and
+            workplaces.
+          </p>
+          {close}
+        </article>
+
+        <article
+          id="share"
+          className={`${this.props.article === 'share' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Share</h2>
           <span className="image main">
             <img src={pic03} alt="" />
           </span>

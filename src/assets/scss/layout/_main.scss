@@ -6,6 +6,10 @@
 
 /* Main */
 
+.no-overlay:before {
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
 	#main {
 		@include vendor('flex-grow', '1');
 		@include vendor('flex-shrink', '1');
@@ -26,11 +30,13 @@
 			));
 			@include padding(2.5rem, 2.5rem, (2rem, 0, 1rem, 0));
 			position: relative;
-			width: 40rem;
+			width: 60rem;
 			max-width: 100%;
 			background-color: transparentize(_palette(bg), 0.15);
 			border-radius: _size(border-radius);
 			opacity: 0;
+			// border: 1px solid _palette(hot-pink);
+			box-shadow: 3px 3px 10px 6px transparentize(black, 0.8);
 
 			&.timeout {
 				display: none;
