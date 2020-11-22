@@ -30,7 +30,7 @@ const Header = props => {
               onClick={() => handleClick('instructions')}
               disabled={props.isArticleVisible}
               style={{
-                position: 'absolute',
+                position: 'fixed',
                 top: '10px',
                 left: '10px'
               }}
@@ -43,7 +43,7 @@ const Header = props => {
               onClick={() => setShowShareMenu(!showShareMenu)}
               disabled={props.isArticleVisible}
               style={{
-                position: 'absolute',
+                position: 'fixed',
                 top: '10px',
                 right: '10px'
               }}
@@ -53,7 +53,7 @@ const Header = props => {
             {showShareMenu ? (
               <div
                 style={{
-                  position: 'absolute',
+                  position: 'fixed',
                   top: isSmallScreen ? '50px' : '80px',
                   right: '10px',
                   width: '7.5rem',
@@ -95,7 +95,7 @@ const Header = props => {
               onClick={() => handleClick('about')}
               disabled={props.isArticleVisible}
               style={{
-                position: 'absolute',
+                position: 'fixed',
                 bottom: '10px',
                 left: '10px'
               }}
@@ -108,7 +108,7 @@ const Header = props => {
               onClick={() => handleClick('contact')}
               disabled={props.isArticleVisible}
               style={{
-                position: 'absolute',
+                position: 'fixed',
                 bottom: '10px',
                 right: '10px'
               }}
