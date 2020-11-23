@@ -60,6 +60,11 @@ nav.top-nav {
   }  
 }
 nav.corner-nav {
+  #test-button {
+    padding: 1.5rem 2rem 4rem 2rem;
+    font-size: 16px;
+    font-weight: 600;
+  }
   ul.ul-border {
     border: solid _size(border-width) _palette(border);
     border-radius: _size(border-radius);
@@ -139,6 +144,7 @@ nav.corner-nav {
     )
   );
   max-width: 100%;
+  margin-top: -200px;
   text-align: center;
 
   > * {
