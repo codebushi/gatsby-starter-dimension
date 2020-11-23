@@ -24,7 +24,7 @@ const Header = props => {
   const isSmallScreen = useMedia({ query: "(max-width: 1024px)" });
   return (
     <>
-      <nav>
+      <nav id="corner-nav">
         <ul>
           <li>
             <button
@@ -132,7 +132,7 @@ const Header = props => {
         <nav>
           <ul className="ul-border">
             <li>
-              <Link to='https://inca.nexxt.in/p/MAPLE_LITE'>
+              <Link to='https://inca.nexxt.in/p/MAPLE_DEMO'>
                 <button
                 >
                   Take The Test
