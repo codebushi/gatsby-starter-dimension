@@ -15,7 +15,7 @@ import {
   EmailIcon
 } from 'react-share';
 
-const Header = props => {
+const LandingHeader = props => {
   const handleClick = (article) => {
     setShowShareMenu(false);
     props.onOpenArticle(article);
@@ -24,42 +24,45 @@ const Header = props => {
   const isSmallScreen = useMedia({ query: "(max-width: 1024px)" });
   return (
     <>
-      <nav className="corner-nav">
+      <nav className="top-nav">
+        <span class="top-logo">MAPLE beta 2.1</span>
         <ul>
           <li>
             <button
-              onClick={() => handleClick('instructions')}
-              disabled={props.isArticleVisible}
-              style={{
-                position: 'fixed',
-                top: '10px',
-                left: '10px'
-              }}
+              onClick={() => handleClick('profiles')}
             >
-              Instructions
+              Profiles
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick('about')}
+            >
+              About
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick('contact')}
+            >
+              Contact
             </button>
           </li>
           <li>
             <button
               onClick={() => setShowShareMenu(!showShareMenu)}
-              disabled={props.isArticleVisible}
-              style={{
-                position: 'fixed',
-                top: '10px',
-                right: '10px'
-              }}
             >
               Share
             </button>
             {showShareMenu ? (
               <div
                 style={{
-                  position: 'fixed',
-                  top: isSmallScreen ? '50px' : '80px',
-                  right: '10px',
-                  width: '7.5rem',
-                  fontSize: '14px',
-                  textAlign: 'center'
+                  // position: 'fixed',
+                  // top: isSmallScreen ? '50px' : '80px',
+                  // right: '10px',
+                  // width: '7.5rem',
+                  // fontSize: '14px',
+                  // textAlign: 'center'
                 }}
                 className="post-social"
               >
@@ -91,65 +94,16 @@ const Header = props => {
               </div>
             ) : null}
           </li>
-          <li>
-            <button
-              onClick={() => handleClick('about')}
-              disabled={props.isArticleVisible}
-              style={{
-                position: 'fixed',
-                bottom: '10px',
-                left: '10px'
-              }}
-            >
-              About
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => handleClick('contact')}
-              disabled={props.isArticleVisible}
-              style={{
-                position: 'fixed',
-                bottom: '10px',
-                right: '10px'
-              }}
-            >
-              Contact
-            </button>
-          </li>
         </ul>
       </nav>
-      <header id="header" style={props.timeout ? { display: 'none' } : {}}>
-        <div className="logo"></div>
-        <div className="content">
-          <div className="inner-logo"></div>
-          <div className="inner">
-            <h1>MAPLE</h1>
-            <h2>A cultural assessment tool</h2>
-            <h6>BETA VERSION</h6>
-          </div>
-        </div>
-        <nav className="corner-nav">
-          <ul className="ul-border">
-            <li>
-              <Link to='https://inca.nexxt.in/p/MAPLE_DEMO'>
-                <button
-                >
-                  Take The Test
-                </button>
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
     </>
   );
 }
 
-Header.propTypes = {
+LandingHeader.propTypes = {
   onOpenArticle: PropTypes.func,
   timeout: PropTypes.bool,
   isArticleVisible: PropTypes.bool
 }
 
-export default Header
+export default LandingHeader

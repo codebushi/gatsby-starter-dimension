@@ -9,22 +9,6 @@ const Layout = ({ children, location }) => {
 
   let content;
 
-  if (location && location.pathname === '/') {
-    content = (
-      <div>
-        {children}
-      </div>
-    )
-  } else {
-    content = (
-      <div id="wrapper" className="page">
-        <div>
-          {children}
-        </div>
-      </div>
-    )
-  }
-
   return (
     <StaticQuery
       query={graphql`
@@ -47,7 +31,9 @@ const Layout = ({ children, location }) => {
           >
             <html lang="en" />
           </Helmet>
-          {content}
+          <div>
+            {children}
+          </div>
         </>
       )}
     />

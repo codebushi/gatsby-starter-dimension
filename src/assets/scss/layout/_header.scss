@@ -5,7 +5,61 @@
 ///
 
 /* Nav */
-nav {
+nav.top-nav {
+  height: 100px;
+  width: 100%;
+  .top-logo {
+    color: _palette(hot-pink);
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: 15px;
+    margin-top: 20px;
+    cursor: default;
+  }
+  ul.ul-border {
+    border: solid _size(border-width) _palette(border);
+    border-radius: _size(border-radius);
+  }
+  ul {
+    list-style: none;
+    float: right;
+
+    li {
+      float: left;
+
+      button {
+        display: block;
+        min-width: 7.5rem;
+        height: 2.75rem;
+        line-height: 2.75rem;
+        padding: 0 1.25rem 0 (1.25rem + _font(letter-spacing));
+        text-transform: uppercase;
+        letter-spacing: _font(letter-spacing);
+        font-size: 0.8rem;
+        font-family: _font(family);
+        border: none;
+        box-shadow: none;
+
+        @media (max-width: 800px) {
+          min-width: 5rem;
+          padding: 0.3rem;
+          line-height: 1rem;
+        }
+
+
+        &:hover,
+        &:focus {
+          background-color: _palette(border-bg);
+        }
+
+        &:active {
+          background-color: _palette(border-bg-alt);
+        }
+      }
+    }
+  }  
+}
+nav.corner-nav {
   ul.ul-border {
     border: solid _size(border-width) _palette(border);
     border-radius: _size(border-radius);
@@ -251,7 +305,7 @@ nav {
       }
     }
 
-    nav {
+    nav.corner-nav {
       ul {
         @include vendor('flex-direction', 'column');
         min-width: 10rem;

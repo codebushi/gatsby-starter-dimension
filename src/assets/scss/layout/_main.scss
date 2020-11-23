@@ -6,6 +6,68 @@
 
 /* Main */
 
+#main.landing {
+	article {
+		width: 90% !important;
+		margin: 0 auto;
+		text-align: center;
+		padding-left: 5% !important;
+	}
+}
+.profiles-container {
+	display: inline-block;
+	* { 
+		margin-top: 5%;
+	}
+	div {
+		display: inline-block;
+		margin-right: 20px;
+		cursor: pointer;
+	}
+	h3 {
+		color: _palette(hot-pink);
+	}
+}
+@media screen and (min-width:1000px) and (max-width:1360px) {
+	.profiles-container {
+		width: 80%;
+	}
+}
+.profile {
+	display: flex;
+	margin-bottom: 40px;
+	.profile-description {
+		border: 1px solid rgba(0, 0, 0, 0.3);
+		height: 500px;
+		overflow: scroll;
+		padding: 15px;
+		text-align: left;
+	}
+	.profile-image {
+		margin-left: 5%;
+	}
+	@media (max-width: 1023px) {
+		display: block;
+		> * {
+			width: 80%;
+			margin: 40px auto !important;
+		}
+		img {
+			max-width: 80%;
+		}
+	}
+}
+@media (max-width: 1023px) {
+  .image-with-span {
+	display: block;
+	text-align: center;
+	span {
+		display: block;
+		text-align: left;
+	}
+  }
+}
+
 .no-overlay:before {
 	background-color: rgba(0, 0, 0, 0) !important;
 }
@@ -56,6 +118,12 @@
 			opacity: 0;
 			// border: 1px solid _palette(hot-pink);
 			box-shadow: 3px 3px 10px 6px transparentize(black, 0.8);
+
+			&.no-popup {
+				box-shadow: none !important;
+				padding: 0 !important;
+				width: 80% !important;
+			}
 
 			&.timeout {
 				display: none;
