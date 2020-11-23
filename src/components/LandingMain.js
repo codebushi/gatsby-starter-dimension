@@ -141,6 +141,7 @@ class LandingMain extends React.Component {
             </div>
           </div>
           <a href={NOUCHUKI_PROFILE_PDF} download class="button-3d btnPush btnGreen">Download Profile</a>
+          <a onClick={() => this.props.onOpenArticle('profiles')} download class="button-3d btnPush btnBlue">View All Profiles</a>
         </article>
 
 
@@ -197,6 +198,7 @@ class LandingMain extends React.Component {
             </div>
           </div>
           <a href={RILSUKYA_PROFILE_PDF} download class="button-3d btnPush btnGreen">Download Profile</a>
+          <a onClick={() => this.props.onOpenArticle('profiles')} download class="button-3d btnPush btnBlue">View All Profiles</a>
         </article>
 
         <article
@@ -251,6 +253,7 @@ class LandingMain extends React.Component {
             </div>
           </div>
           <a href={ANJOGEY_PROFILE_PDF} download class="button-3d btnPush btnGreen">Download Profile</a>
+          <a onClick={() => this.props.onOpenArticle('profiles')} download class="button-3d btnPush btnBlue">View All Profiles</a>
         </article>
 
 
@@ -306,6 +309,7 @@ class LandingMain extends React.Component {
             </div>
           </div>
           <a href={WALTHANOO_PROFILE_PDF} download class="button-3d btnPush btnGreen">Download Profile</a>
+          <a onClick={() => this.props.onOpenArticle('profiles')} download class="button-3d btnPush btnBlue">View All Profiles</a>
         </article>
 
         <article
