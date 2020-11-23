@@ -15,6 +15,7 @@ import {
   EmailIcon
 } from 'react-share';
 
+const shareMsg = 'Take the MAPLE cultural assessment test to find out how your cultural values impact your behaviour. It’s easy and fun to do! Discover your profile at';
 const Header = props => {
   const handleClick = (article) => {
     setShowShareMenu(false);
@@ -68,22 +69,22 @@ const Header = props => {
                     <FacebookIcon size={isSmallScreen ? 16 : 32} round={true} />
                   </span>
                 </FacebookShareButton>
-                <TwitterShareButton url={'https://interculturalskillslab.com'} className="is-rounded twitter" title={'MAPLE Beta'} style={{height: 'inherit'}} >
+                <TwitterShareButton url={'https://interculturalskillslab.com'} className="is-rounded twitter" title={shareMsg} style={{height: 'inherit'}} >
                   <span className="icon">
                     <TwitterIcon size={isSmallScreen ? 16 : 32} round={true} />
                   </span>
                 </TwitterShareButton>
-                <LinkedinShareButton url={'https://interculturalskillslab.com'} className="is-rounded linkedin" title={'MAPLE Beta'} style={{height: 'inherit'}} >
+                <LinkedinShareButton url={'https://interculturalskillslab.com'} className="is-rounded linkedin" title={shareMsg} style={{height: 'inherit'}} >
                   <span className="icon">
                     <LinkedinIcon size={isSmallScreen ? 16 : 32} round={true} />
                   </span>
                 </LinkedinShareButton>
-                <WhatsappShareButton url={'https://interculturalskillslab.com'} className="is-rounded whatsapp" title={'MAPLE Beta'} style={{height: 'inherit'}} >
+                <WhatsappShareButton url={'https://interculturalskillslab.com'} className="is-rounded whatsapp" title={shareMsg} style={{height: 'inherit'}} >
                   <span className="icon">
                     <WhatsappIcon size={isSmallScreen ? 16 : 32} round={true} />
                   </span>
                 </WhatsappShareButton>
-                <EmailShareButton url={'https://interculturalskillslab.com'} className="is-rounded email" title={'MAPLE Beta'} style={{height: 'inherit'}} >
+                <EmailShareButton url={'https://interculturalskillslab.com'} className="is-rounded email" title={shareMsg} style={{height: 'inherit'}} >
                   <span className="icon">
                     <EmailIcon size={isSmallScreen ? 16 : 32} round={true} />
                   </span>
@@ -133,8 +134,7 @@ const Header = props => {
           <ul className="ul-border">
             <li>
               <Link to='https://inca.nexxt.in/p/MAPLE_DEMO'>
-                <button
-                >
+                <button id="test-button">
                   Take The Test
                 </button>
               </Link>
