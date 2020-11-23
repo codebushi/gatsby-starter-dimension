@@ -320,7 +320,11 @@ class LandingMain extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form action="https://getform.io/f/c1bcca87-de02-4091-a305-8522e03cc995" method="POST">
+          <form
+            action="https://getform.io/f/c1bcca87-de02-4091-a305-8522e03cc995"
+            method="POST"
+            style={{ maxWidth: '600px', margin: '0 auto' }}
+          >
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
