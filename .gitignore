@@ -1,5 +1,6 @@
 # Project dependencies
 .cache
+.github
 node_modules
 yarn-error.log
 
