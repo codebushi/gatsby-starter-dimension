@@ -8,13 +8,13 @@ const Header = props => (
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>Clement Tse</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
+          Seasoned Strategic Advisor and Product Management Leader
           <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          Transforming businesses and products by questioning 
+          <br />
+          "What If the Impossible isn't"
         </p>
       </div>
     </div>
