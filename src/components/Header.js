@@ -10,11 +10,11 @@ const Header = props => (
       <div className="inner">
         <h1>Clement Tse</h1>
         <p>
-          Seasoned Strategic Advisor and Product Management Leader
+          <b>Seasoned Strategic Advisor and Product Management Leader</b>
           <br />
-          Transforming businesses and products by questioning 
+          Transforming businesses and products by uncovering
           <br />
-          "What If the Impossible isn't"
+          <em>"What If the Impossible isn't"</em>
         </p>
       </div>
     </div>
