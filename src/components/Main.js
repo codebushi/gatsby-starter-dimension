@@ -5,30 +5,28 @@ import WorkArticle from '../pages/articles/work'
 import IntroArticle from '../pages/articles/intro'
 import ContactArticle from '../pages/articles/contact'
 
-class Main extends React.Component {
-  render() {
-    let close = (
-      <div
-        className="close"
-        onClick={() => {
-          this.props.onCloseArticle()
-        }}
-      ></div>
-    )
+const Main = ({article, onCloseArticle, setWrapperRef, timeout, route, articleTimeout}) => {
+  let close = (
+    <div
+      className="close"
+      onClick={() => {
+        onCloseArticle()
+      }}
+    ></div>
+  )
 
-    return (
-      <div
-        ref={this.props.setWrapperRef}
-        id="main"
-        style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
-      >
-        <IntroArticle close={this.props.close} article={this.props.article} articleTimeout={this.props.articleTimeout} />
-        <WorkArticle close={this.props.close} article={this.props.article} articleTimeout={this.props.articleTimeout} />
-        <AboutArticle close={this.props.close} article={this.props.article} articleTimeout={this.props.articleTimeout} />
-        <ContactArticle close={this.props.close} article={this.props.article} articleTimeout={this.props.articleTimeout} />
-      </div>
-    )
-  }
+  return (
+    <div
+      ref={setWrapperRef}
+      id="main"
+      style={timeout ? { display: 'flex' } : { display: 'none' }}
+    >
+      <IntroArticle close={close} article={article} articleTimeout={articleTimeout} />
+      <WorkArticle close={close} article={article} articleTimeout={articleTimeout} />
+      <AboutArticle close={close} article={article} articleTimeout={articleTimeout} />
+      <ContactArticle close={close} article={article} articleTimeout={articleTimeout} />
+    </div>
+  )
 }
 
 Main.propTypes = {
