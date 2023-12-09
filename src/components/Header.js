@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import * as Constants from './Constants'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -23,7 +24,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('intro')
+              props.onOpenArticle(Constants.INTRO_PAGE)
             }}
           >
             Intro
@@ -32,7 +33,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('work')
+              props.onOpenArticle(Constants.WORK_PAGE)
             }}
           >
             Work
@@ -41,7 +42,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle(Constants.ABOUT_PAGE)
             }}
           >
             About
@@ -50,7 +51,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('contact')
+              props.onOpenArticle(Constants.CONTACT_PAGE)
             }}
           >
             Contact

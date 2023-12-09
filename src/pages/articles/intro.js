@@ -1,11 +1,12 @@
 import React from "react";
 import pic01 from '../../images/pic01.jpg'
+import { INTRO_PAGE } from "../../components/Constants";
 
 const IntroArticle = ({ close, article, articleTimeout }) => {
     return (
         <article
             id="intro"
-            className={`${article === 'intro' ? 'active' : ''} ${articleTimeout ? 'timeout' : ''
+            className={`${article === INTRO_PAGE ? 'active' : ''} ${articleTimeout ? 'timeout' : ''
                 }`}
             style={{ display: 'none' }}
         >

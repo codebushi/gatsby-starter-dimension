@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter - Dimension V2',
+    title: 'Clement Tse',
     author: 'Clement Tse',
-    description: 'Personal website based on the Dimension starter',
+    description: 'Me in 10 seconds. Product leader in B2B SaaS companies, Strategic Advisor for Digital Transformations, Startup Founder, and Dad',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -15,7 +15,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/ct-logo.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-sass',

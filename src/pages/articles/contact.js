@@ -1,10 +1,11 @@
 import React from "react";
+import { CONTACT_PAGE } from "../../components/Constants";
 
 const ContactArticle = ({ close, article, articleTimeout }) => {
     return (
         <article
             id="contact"
-            className={`${article === 'contact' ? 'active' : ''} ${articleTimeout ? 'timeout' : ''
+            className={`${article === CONTACT_PAGE ? 'active' : ''} ${articleTimeout ? 'timeout' : ''
                 }`}
             style={{ display: 'none' }}
         >

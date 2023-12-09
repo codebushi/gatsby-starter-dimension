@@ -1,12 +1,13 @@
 import React from "react";
 import pic02 from '../../images/pic02.jpg'
+import { WORK_PAGE } from "../../components/Constants";
 
 
 const WorkArticle = ({ close, article, articleTimeout }) => {
     return (
         <article
             id="work"
-            className={`${article === 'work' ? 'active' : ''} ${articleTimeout ? 'timeout' : ''
+            className={`${article === WORK_PAGE ? 'active' : ''} ${articleTimeout ? 'timeout' : ''
                 }`}
             style={{ display: 'none' }}
         >
