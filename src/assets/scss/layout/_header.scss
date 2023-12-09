@@ -74,6 +74,21 @@
         font-size: 2rem;
       }
     }
+
+    @media only screen and (min-width: 736px) {
+      .monogram {
+        object-fit: scale-down;
+        height: 5.5em;
+      } 
+    }
+    
+    @media only screen and (max-width: 735px) {
+      .monogram {
+        object-fit: scale-down;
+        height: 5em;
+      } 
+    }
+    
   }
 
   .content {
