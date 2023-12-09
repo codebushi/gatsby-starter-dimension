@@ -2,7 +2,7 @@ import React from "react";
 import pic02 from '../../images/pic02.jpg'
 
 
-function WorkArticle({ close, article, articleTimeout }) {
+const WorkArticle = ({ close, article, articleTimeout }) => {
     return (
         <article
             id="work"

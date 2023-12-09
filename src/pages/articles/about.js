@@ -1,7 +1,7 @@
 import React from 'react'
 import pic03 from '../../images/pic03.jpg'
 
-function AboutArticle({ close, article, articleTimeout }) {
+const AboutArticle = ({ close, article, articleTimeout }) => {
   return (<article
     id="about"
     className={`${article === 'about' ? 'active' : ''} ${articleTimeout ? 'timeout' : ''
